@@ -21,6 +21,12 @@ Lambdaアプリケーションのための練習プログラム集
 1. [開発](#開発 )
   
 ## 構築
+`.env`環境変数ファイルを作成する
+```text
+AWS_ACCESS_KEY_ID=xxxxxxxxxxxxxxx
+AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxx
+AWS_DEFAULT_REGION=us-east-1
+```
 
 ```bash
 docker-compose up -d
@@ -108,5 +114,13 @@ npm install --save-dev mocha chai co
 ```bash
 npm install --save-dev husky
 ```
+
+## 配置
++ [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
+
+## 運用
++ [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
+
+## 開発
 
 ## 参照
