@@ -61,7 +61,7 @@ npm init
 + Dev Dependenciesは開発中またはアプリケーションのビルド(Webpack, SASS, linters, testing frameworks, etc)。`yarn add --dev [package]`でインストールする。
   
     
-### 03 - Babel, ES6, ESLint, Flow, Mocha, and Husky
+### 02 - Babel, ES6, ESLint, Flow, Mocha, and Husky
   
 #### Babel
   
