@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  TestFunction:
+    Properties:
+      CodeUri: s3://etude-for-lambda/9b17db42444daec207673f6c43e8c292
+      Environment:
+        Variables:
+          S3_BUCKET: etude-for-lambda
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
