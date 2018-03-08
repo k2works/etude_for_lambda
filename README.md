@@ -109,4 +109,11 @@ npm install --save-dev mocha chai co
 npm install --save-dev husky
 ```
 
+## 配置
+
+## 運用
+
+## 開発
+
 ## 参照
++ [独自のサーバーレスアプリケーションを作成する](https://docs.aws.amazon.com/ja_jp/lambda/latest/dg/serverless-deploy-wt.html)
