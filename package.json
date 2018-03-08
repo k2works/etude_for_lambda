@@ -1,6 +1,6 @@
 {
   "name": "etude_for_lambda",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Etude",
   "main": "index.js",
   "scripts": {
