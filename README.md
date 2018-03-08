@@ -109,6 +109,11 @@ npm install --save-dev mocha chai co
 npm install --save-dev husky
 ```
 
+#### S3バケット
+```bash
+aws s3 mb s3://etude-for-lambda
+```
+
 ## 配置
 
 ## 運用
