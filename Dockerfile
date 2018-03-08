@@ -3,10 +3,9 @@ MAINTAINER k2works
 LABEL version="1.0"
 
 RUN set -xv                                                                                 && \
-    yum install groff less vim
+    yum install groff less vim -y
 
 ENV node_version="6.10.3"
-
 RUN set -xv                                                                                 && \
     curl -s "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"                          && \
     python get-pip.py                                                                       && \
