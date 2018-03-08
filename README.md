@@ -115,12 +115,20 @@ npm install --save-dev mocha chai co
 npm install --save-dev husky
 ```
 
+### 03 SAM Local
+```bash
+npm install -g aws-sam-local
+```
+
 ## 配置
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
++ [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
 
 ## 運用
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
++ [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
 
 ## 開発
++ [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
 
 ## 参照

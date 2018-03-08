@@ -1,0 +1,26 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: My first serverless application.
+Resources:
+  Products:
+    Properties:
+      CodeUri: s3://etude-for-lambda/776c8006f9fb680da67c907f3cef9133
+      Events:
+        CreateProduct:
+          Properties:
+            Method: post
+            Path: /products
+          Type: Api
+        ListProducts:
+          Properties:
+            Method: get
+            Path: /products
+          Type: Api
+        Product:
+          Properties:
+            Method: any
+            Path: /products/{product}
+          Type: Api
+      Handler: products.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
