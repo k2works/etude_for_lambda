@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  SesFunction:
+    Properties:
+      CodeUri: s3://etude-for-lambda/cfc90f5de074a10aefe5cca34c08ef78
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
