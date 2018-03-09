@@ -6,3 +6,4 @@ build
 coverage
 .env
 get-pip.py
+env.json
