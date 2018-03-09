@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  LambdaWithSNS:
+    Properties:
+      CodeUri: s3://etude-for-lambda/2cc52ae101f5b37fca157fb2f8f936e6
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
