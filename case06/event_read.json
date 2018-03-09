@@ -1,0 +1,9 @@
+{
+  "operation": "read",
+  "tableName": "LambdaTable",
+  "payload": {
+    "Key": {
+      "Id": "1"
+    }
+  }
+}

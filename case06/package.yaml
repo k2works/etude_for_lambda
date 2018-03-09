@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  LambdaFunctionOverHttps:
+    Properties:
+      CodeUri: s3://etude-for-lambda/effbb4bd40a91989671f6fbfcbc33439
+      Events:
+        HttpPost:
+          Properties:
+            Method: post
+            Path: DynamoDBOperations/DynamoDBManager
+          Type: Api
+      Handler: lambdafunctionoverhttps.handler
+      Policies: AmazonDynamoDBFullAccess
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
