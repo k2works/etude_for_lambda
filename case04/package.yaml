@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  DynamoDBTable:
+    Properties:
+      AttributeDefinitions:
+      - AttributeName: id
+        AttributeType: S
+      KeySchema:
+      - AttributeName: id
+        KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+      StreamSpecification:
+        StreamViewType: NEW_IMAGE
+    Type: AWS::DynamoDB::Table
+  ProcessDynamoDBStream:
+    Properties:
+      CodeUri: s3://etude-for-lambda/dbd2359832c7db9328da7628a877b18d
+      Events:
+        Stream:
+          Properties:
+            BatchSize: 100
+            StartingPosition: TRIM_HORIZON
+            Stream:
+              Fn::GetAtt:
+              - DynamoDBTable
+              - StreamArn
+          Type: DynamoDB
+      Handler: processdynamodbstream.handler
+      Policies: AWSLambdaDynamoDBExecutionRole
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
