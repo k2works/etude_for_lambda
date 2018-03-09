@@ -123,12 +123,15 @@ npm install -g aws-sam-local
 ## 配置
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
++ [AWS Lambda を Amazon S3 に使用する](./docs/case03.md)
 
 ## 運用
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
++ [AWS Lambda を Amazon S3 に使用する](./docs/case03.md)
 
 ## 開発
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
++ [AWS Lambda を Amazon S3 に使用する](./docs/case03.md)
 
 ## 参照
