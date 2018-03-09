@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  SNSTopic1:
+    Type: AWS::SNS::Topic
+  SnsToSlack:
+    Properties:
+      CodeUri: s3://etude-for-lambda/e21f46ffaa3f2a6af6cc2f22b94eba51
+      Environment:
+        Variables:
+          SLACK_WEBHOOK_URL: /services/xxxxxxxxxxxxxxxxxxxx
+      Events:
+        SNS1:
+          Properties:
+            Topic:
+              Ref: SNSTopic1
+          Type: SNS
+      Handler: index.handler
+      Runtime: nodejs6.10
+    Type: AWS::Serverless::Function
+Transform: AWS::Serverless-2016-10-31
