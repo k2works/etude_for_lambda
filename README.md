@@ -120,6 +120,26 @@ npm install --save-dev husky
 npm install -g aws-sam-local
 ```
 
+### 04 - Webpack, Hot Module Replacement
+  
+#### Webpack
+  
+> Webpackはモジュールバンドラー。バンドルと呼ばれるクライアントから実行される唯一のJavaScriptファイルを様々なソースファイルから取りまとめて作る。
+  
+```bash
+npm install --save babel-polyfill
+npm install --save-dev webpack webpack-dev-server babel-core babel-loader
+```
+    
+#### Hot Module Replacement
+  
+> Hot Module Replacement(HMR)はページをリロードすることなくモジュールをすぐに更新する強力なWebpackの機能。
+  
+```bash
+npm install --save react-hot-loader@next
+```
+  
+
 ## 配置
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
@@ -129,6 +149,7 @@ npm install -g aws-sam-local
 + [Amazon API Gateway での AWS Lambda の使用 (オンデマンド HTTPS 経由)](./docs/case06.md)
 + [SNSからSlackに通知する](./docs/case07.md)
 + [Amazon S3 から E メールを取得する](./docs/case08.md)
++ [Webpackを使った開発](./docs/case09.md)
 
 ## 運用
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
@@ -139,6 +160,7 @@ npm install -g aws-sam-local
 + [Amazon API Gateway での AWS Lambda の使用 (オンデマンド HTTPS 経由)](./docs/case06.md)
 + [SNSからSlackに通知する](./docs/case07.md)
 + [Amazon S3 から E メールを取得する](./docs/case08.md)
++ [Webpackを使った開発](./docs/case09.md)
 
 ## 開発
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
@@ -148,5 +170,6 @@ npm install -g aws-sam-local
 + [Amazon API Gateway での AWS Lambda の使用 (オンデマンド HTTPS 経由)](./docs/case06.md)
 + [SNSからSlackに通知する](./docs/case07.md)
 + [Amazon S3 から E メールを取得する](./docs/case08.md)
++ [Webpackを使った開発](./docs/case09.md)
 
 ## 参照
