@@ -120,6 +120,26 @@ npm install --save-dev husky
 npm install -g aws-sam-local
 ```
 
+### 04 - Webpack, Hot Module Replacement
+  
+#### Webpack
+  
+> Webpackはモジュールバンドラー。バンドルと呼ばれるクライアントから実行される唯一のJavaScriptファイルを様々なソースファイルから取りまとめて作る。
+  
+```bash
+npm install --save babel-polyfill
+npm install --save-dev webpack webpack-dev-server babel-core babel-loader
+```
+    
+#### Hot Module Replacement
+  
+> Hot Module Replacement(HMR)はページをリロードすることなくモジュールをすぐに更新する強力なWebpackの機能。
+  
+```bash
+npm install --save react-hot-loader@next
+```
+  
+
 ## 配置
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
