@@ -149,6 +149,7 @@ npm install --save react-hot-loader@next
 + [Amazon API Gateway での AWS Lambda の使用 (オンデマンド HTTPS 経由)](./docs/case06.md)
 + [SNSからSlackに通知する](./docs/case07.md)
 + [Amazon S3 から E メールを取得する](./docs/case08.md)
++ [Webpackを使った開発](./docs/case09.md)
 
 ## 運用
 + [独自のサーバーレスアプリケーションを作成する](./docs/case01.md)
@@ -159,6 +160,7 @@ npm install --save react-hot-loader@next
 + [Amazon API Gateway での AWS Lambda の使用 (オンデマンド HTTPS 経由)](./docs/case06.md)
 + [SNSからSlackに通知する](./docs/case07.md)
 + [Amazon S3 から E メールを取得する](./docs/case08.md)
++ [Webpackを使った開発](./docs/case09.md)
 
 ## 開発
 + [SAM ローカルを使用してサーバーレスアプリケーションをローカルでテストする](./docs/case02.md)
@@ -168,5 +170,6 @@ npm install --save react-hot-loader@next
 + [Amazon API Gateway での AWS Lambda の使用 (オンデマンド HTTPS 経由)](./docs/case06.md)
 + [SNSからSlackに通知する](./docs/case07.md)
 + [Amazon S3 から E メールを取得する](./docs/case08.md)
++ [Webpackを使った開発](./docs/case09.md)
 
 ## 参照
